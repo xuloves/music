@@ -1,0 +1,10 @@
+<view class='songlist-container' bindtap='onTap'>
+  <view class='pic'>
+    <image class="bg" src="{{img}}"></image>
+    <view class='desc' wx:if="{{count > 0}}">
+      <image class="hp" src='/images/icon/headphone.png'></image>
+      <text>{{count}}</text>
+    </view>
+  </view>
+  <text class="name">{{name}}</text>
+</view>

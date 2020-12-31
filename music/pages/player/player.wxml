@@ -1,0 +1,4 @@
+<!--pages/player/player.wxml-->
+<view>
+  <music-cmp img="{{song.al.picUrl}}" name="{{song.name}}" src="{{url}}" />
+</view>

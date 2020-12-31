@@ -1,0 +1,30 @@
+<view class="register-container">
+  <form report-submit="true" bindsubmit="onRegisterSubmitTap">
+    <view class="input-area">
+      <view class='image'>
+        <image src='../../images/accounts/phone.png'></image>
+      </view>
+      <input maxlength="11" bindblur="checkPhoneNumber" type="number" placeholder-style="color:gray" placeholder="填写手机号" name="phone" />
+      <button id="sendMsg" type="primary" bindtap="sendMsg">发送验证码</button>
+    </view>
+    <view class="input-area">
+      <view class='image'>
+        <image src='../../images/accounts/pwd.png'></image>
+      </view>
+      <input type="password" placeholder-style="color:gray" placeholder="输入密码" name="pwd"/>
+    </view>
+    <view class="input-area">
+      <view class='image'>
+        <image src='../../images/accounts/pwd.png'></image>
+      </view>
+      <input type="password" placeholder-style="color:gray" placeholder="再次输入密码" name="checkpwd"/>
+    </view>
+    <view class="input-area">
+      <view class='image'>
+        <image src='../../images/accounts/pwd.png'></image>
+      </view>
+      <input type="text" placeholder-style="color:gray" placeholder="请输入验证码" name="captcha"/>
+    </view>
+    <button disabled="{{disabled}}" id="registerBtn" type="primary"  formType="submit">{{btnVal}}</button>
+  </form>
+</view>

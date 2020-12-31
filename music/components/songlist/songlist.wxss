@@ -1,0 +1,50 @@
+.songlist-container {
+  display: flex;
+  flex-direction: column;
+  width: 240rpx;
+  height: 304rpx;
+  margin: 18rpx 4rpx;
+  box-sizing: border-box;
+}
+
+.songlist-container .name {
+  margin-top: 10rpx;
+  text-align: center;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 22rpx;
+}
+
+.songlist-container .pic {
+  position: relative;
+  width: 241rpx;
+  height: 241rpx;
+}
+
+.songlist-container .pic .desc {
+  position: absolute;
+  line-height: 20rpx;
+  top: 8rpx;
+  right: 15rpx;
+}
+
+.songlist-container .pic .desc .hp {
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 3px;
+  vertical-align: bottom;
+}
+
+.songlist-container .pic .desc text {
+  font-size: 20rpx;
+}
+
+.songlist-container .pic .bg {
+  width: 241rpx;
+  height: 241rpx;
+  border-radius: 5rpx;
+}

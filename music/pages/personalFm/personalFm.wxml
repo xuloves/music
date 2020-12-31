@@ -1,0 +1,4 @@
+<!--pages/personalFm/personalFm.wxml-->
+<view class='personal_fm-container'>
+  <text>暂未开发</text>
+</view>

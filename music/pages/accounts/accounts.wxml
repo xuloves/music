@@ -1,0 +1,81 @@
+<!--pages/accounts/accounts.wxml-->
+<view class='accounts-container'>
+  <view wx:if="{{!isLogin}}">
+    <view class='logo-content'>
+      <image src='/images/icon/logo.png'></image>
+    </view>
+    <view class='btn-content'>
+      <button class="item" catchtap='login'>手机号登录</button>
+      <button catchtap='register'>注册账号</button>
+    </view>
+  </view>
+  <view wx:if="{{isLogin}}">
+    <view class='logout' bindtap='logout'>
+      <image src='../../images/accounts/logout.png'></image>
+    </view>
+    <view class='content-container'>
+      <view class='avatar'>
+        <image src='{{user.avatar}}'></image>
+      </view>
+      <view class='nickname'>
+        <text>{{user.nickname}}</text>
+      </view>
+      <view class='signature'>
+        <text>{{user.signature}}</text>
+      </view>
+    </view>
+    <view class='mine-container'>
+  <view class='head'>
+    <view class='item'>
+      <view class='img'>
+        <image src='../../images/me/local_music.png'></image>
+      </view>
+      <view class='text'>
+        <text>本地音乐</text>
+        <view class='right'>
+          <text>0</text>
+          <image src='../../images/me/arrow_right.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='img'>
+        <image src='../../images/me/play.png'></image>
+      </view>
+      <view class='text'>
+        <text>最近播放</text>
+        <view class='right'>
+          <text>0</text>
+          <image src='../../images/me/arrow_right.png'></image>
+        </view>
+      </view>
+    </view>
+    <navigator url="/pages/map/map">
+    <view class='item'>
+      <view class='img'>
+        <image src='../../images/me/map.png'></image>
+      </view>
+      <view class='text'>
+        <text>我的附近</text>
+        <view class='right'>
+          <text>3</text>
+          <image src='../../images/me/arrow_right.png'></image>
+        </view>
+      </view>
+    </view>
+    </navigator>
+    <view class='item'>
+      <view class='img'>
+        <image src='../../images/me/collection.png'></image>
+      </view>
+      <view class='text'>
+        <text>我的收藏</text>
+        <view class='right'>
+          <text>0</text>
+          <image src='../../images/me/arrow_right.png'></image>
+        </view>
+      </view>
+    </view>
+  </view></view>
+  </view>
+</view>

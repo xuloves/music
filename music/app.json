@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/discover/discover",
+    "pages/top/top",
+    "pages/allPlaylist/allPlaylist",
+    "pages/personalFm/personalFm",
+    "pages/recommend/recommend",
+    "pages/singer/singer",
+    "pages/singerDetail/singerDetail",
+    "pages/mine/mine",
+    "pages/video/video",
+    "pages/accounts/accounts",
+    "pages/player/player",
+    "pages/playlist/playlist",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E1D1F",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fff"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#B53B34",
+    "backgroundColor": "#1E1D1F",
+    "color": "#696665",
+    "list": [
+      {
+        "pagePath": "pages/discover/discover",
+        "selectedIconPath": "/images/tab/discover_active.png",
+        "iconPath": "/images/tab/discover.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "selectedIconPath": "/images/tab/mine_active.png",
+        "iconPath": "/images/tab/mine.png",
+        "text": "音乐"
+      },
+      {
+        "pagePath": "pages/singer/singer",
+        "selectedIconPath": "/images/tab/singer_active.png",
+        "iconPath": "/images/tab/singer.png",
+        "text": "歌手"
+      },
+      {
+        "pagePath": "pages/accounts/accounts",
+        "selectedIconPath": "/images/tab/accounts_active.png",
+        "iconPath": "/images/tab/accounts.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "mMgr"
+  ]
+}

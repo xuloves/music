@@ -1,0 +1,52 @@
+
+page {
+  background-color: #1e1d1f;
+}
+
+.register-container {
+  margin-top: 32rpx;
+  background-color: #1e1d1f;
+}
+
+.register-container .input-area {
+  display: flex;
+  padding: 24rpx;
+  border-bottom: 1px solid #2D2C30;
+}
+
+.register-container .input-area .image{
+  display: flex;
+  flex: 0 0 35rpx;
+  justify-content: center;
+  align-items: center;
+}
+.register-container .input-area #sendMsg{
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  border-radius: 37rpx;
+  background-color: #AF3E37;
+}
+
+.register-container .input-area .image image{
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.register-container .input-area input{
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  color:#2D2C30
+}
+
+#registerBtn {
+  margin-top: 56rpx;
+  width: 692rpx;
+  height: 73rpx;
+  line-height: 73rpx;
+  font-size: 27rpx;
+  border-radius: 37rpx;
+  background-color: #AF3E37;
+}

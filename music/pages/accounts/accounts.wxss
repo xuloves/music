@@ -1,0 +1,151 @@
+/* pages/accounts/accounts.wxss */
+
+page {
+  background-color: #1e1d1f;
+}
+
+.accounts-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e1d1f;
+}
+
+.accounts-container .logo-content {
+  margin-top: 170rpx;
+  text-align: center;
+}
+
+.accounts-container .logo-content image {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.accounts-container .btn-content {
+  margin-top: 134rpx;
+  text-align: center;
+}
+.accounts-container .btn-content .item {
+  margin-bottom: 25rpx;
+
+}
+
+.accounts-container .btn-content button {
+  width: 587rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #b53b34;
+  background-color: #1e1d1f;
+  border: 1px solid #b53b34;
+  border-radius: 38rpx;
+}
+
+.accounts-container .logout {
+  position: absolute;
+  right: 35rpx;
+  top: 35rpx;
+  padding: 20rpx;
+}
+
+.accounts-container .logout image{
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.accounts-container .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accounts-container .content-container .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100rpx;
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 50%;
+  background-color: #b53b34;
+}
+
+.accounts-container .content-container .avatar image {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+}
+
+.accounts-container .content-container .nickname {
+  width: 240rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-top: 50rpx;
+  text-align: center;
+  border-radius: 32rpx;
+  font-size: 24rpx;
+  color: #767676;
+}
+
+.accounts-container .content-container .signature {
+  margin-top: 110rpx;
+  width: 375rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #767676;
+}
+
+
+.mine-container {
+  background-color: #1E1D1F;
+}
+
+.mine-container .head{
+  position: fixed;
+  top: 550rpx;
+  width: 100%;
+  background-color: #1E1D1F;
+}
+
+.mine-container .head .item {
+  display: flex;
+  height: 99rpx;
+}
+
+.mine-container .head .item .img{
+  display: flex;
+  flex: 0 0 124rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.mine-container .head .item .img image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.mine-container .head .item .text{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20rpx;
+  color: #cacaca;
+  font-size: 30rpx;
+  border-bottom: 1px solid #29282C;
+}
+
+.mine-container .head .item .text .right{
+  display: flex;
+  align-items: center;
+}
+
+.mine-container .head .item .text image{
+  margin-left: 15rpx;
+  width: 27rpx;
+  height: 27rpx;
+}

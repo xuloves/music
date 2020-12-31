@@ -1,0 +1,13 @@
+<view class="music-container">
+  <view class='bg'>
+    <image src="{{img}}" />
+  </view>
+  <view class='player-container' bind:touchstart="onTouchstart" bind:touchmove='onTouchmove'
+    bind:touchend="onTouchend" 
+   >
+    <!-- <text class="name">{{name}}</text> -->
+    <image src="{{playingBg}}" class="playing-bg {{playing?'rotation':''}}" />
+    <image src="{{img}}" class="player-img {{playing?'rotation':''}}" />
+    <image class="playing-img" catch:tap="onPlay" src="{{playing?playingUrl:waittingUrl}}" />
+  </view>
+</view>
